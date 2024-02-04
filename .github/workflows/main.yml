@@ -33,6 +33,6 @@ jobs:
           project_id: ornate-reef-332816
           event_trigger_type: providers/cloud.pubsub/eventTypes/topic.publish
           event_trigger_resource: projects/ornate-reef-332816/topics/google_forms
-          source_dir: ./google_forms/
+          source_dir: ./function_files/
           timeout: 540
           memory_mb: 1024
