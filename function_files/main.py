@@ -76,7 +76,8 @@ def format_df():
         df.columns[2]: "content_type_response",
         df.columns[3]: "product_help_response"
     }, inplace=True)
-    
+
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
     df["dt_updated"] = pd.Timestamp.now(tz="US/Eastern")
     
     return df
